@@ -110,105 +110,83 @@ const Sidebar = () => {
       <br />
       <br />
       <div className={classes.item}>
-        <DashboardIcon className={classes.icon} />
-        <Typography className={classes.text}>
-          <Link to="/dashboard" className={classes.link}>
-            Dashboard
-          </Link>
-        </Typography>
+        <Link to="/dashboard" className={classes.link}>
+          <DashboardIcon className={classes.icon} />
+          <Typography className={classes.text}>Dashboard</Typography>
+        </Link>
       </div>
 
       <div className={classes.mainItems}>
         <div className={classes.item}>
-          <KeyIcon className={classes.icon} />
-          <Typography className={classes.text}>
-            <Link to="/e3apps" className={classes.link}>
-              E3 Apps
-            </Link>
-          </Typography>
+          <Link to="/e3apps" className={classes.link}>
+            <KeyIcon className={classes.icon} />
+            <Typography className={classes.text}>E3 Apps</Typography>
+          </Link>
         </div>
         <div className={classes.item}>
-          <PeakAlertIcon className={classes.icon} />
-          <Typography className={classes.text}>
-            <Link to="/peak-shaving" className={classes.link}>
+          <Link to="/peak-shaving" className={classes.link}>
+            <PeakAlertIcon className={classes.icon} />
+            <Typography className={classes.text}>
               Peak Shaving & Alert
-            </Link>
-          </Typography>
+            </Typography>
+          </Link>
         </div>
         <div className={classes.item}>
-          <VentilationIcon className={classes.icon} />
-          <Typography className={classes.text}>
-            <Link to="/ventilation" className={classes.link}>
-              Ventilation
-            </Link>
-          </Typography>
+          <Link to="/ventilation" className={classes.link}>
+            <VentilationIcon className={classes.icon} />
+            <Typography className={classes.text}>Ventilation</Typography>
+          </Link>
         </div>
         <div className={classes.item}>
-          <FanIcon className={classes.icon} />
-          <Typography className={classes.text}>
-            <Link to="/cooling" className={classes.link}>
-              Cooling
-            </Link>
-          </Typography>
+          <Link to="/cooling" className={classes.link}>
+            <FanIcon className={classes.icon} />
+            <Typography className={classes.text}>Cooling</Typography>
+          </Link>
         </div>
         <div className={classes.item}>
-          <HeatPumpIcon className={classes.icon} />
-          <Typography className={classes.text}>
-            <Link to="/heat-pump" className={classes.link}>
-              Heat Pump
-            </Link>
-          </Typography>
+          <Link to="/heat-pump" className={classes.link}>
+            <HeatPumpIcon className={classes.icon} />
+            <Typography className={classes.text}>Heat Pump</Typography>
+          </Link>
         </div>
         <div className={classes.item}>
-          <OutOfHoursIcon className={classes.icon} />
-          <Typography className={classes.text}>
-            <Link to="/out-of-hours" className={classes.link}>
-              Out Of Hours
-            </Link>
-          </Typography>
+          <Link to="/out-of-hours" className={classes.link}>
+            <OutOfHoursIcon className={classes.icon} />
+            <Typography className={classes.text}>Out Of Hours</Typography>
+          </Link>
         </div>
         <div className={classes.item}>
-          <EVCharginStationIcon className={classes.icon} />
-          <Typography className={classes.text}>
-            <Link to="/ev-charging" className={classes.link}>
-              Ev Charging
-            </Link>
-          </Typography>
+          <Link to="/ev-charging" className={classes.link}>
+            <EVCharginStationIcon className={classes.icon} />
+            <Typography className={classes.text}>Ev Charging</Typography>
+          </Link>
         </div>
         <div className={classes.item}>
-          <LoadShiftingIcon className={classes.icon} />
-          <Typography className={classes.text}>
-            <Link to="/load-shifting" className={classes.link}>
-              Load Shifting
-            </Link>
-          </Typography>
+          <Link to="/load-shifting" className={classes.link}>
+            <LoadShiftingIcon className={classes.icon} />
+            <Typography className={classes.text}>Load Shifting</Typography>
+          </Link>
         </div>
       </div>
 
       <div className={classes.otherItems}>
         <div className={classes.item}>
-          <DemandIcon className={classes.icon} />
-          <Typography className={classes.text}>
-            <Link to="/demand-response" className={classes.link}>
-              Demand Response
-            </Link>
-          </Typography>
+          <Link to="/demand-response" className={classes.link}>
+            <DemandIcon className={classes.icon} />
+            <Typography className={classes.text}>Demand Response</Typography>
+          </Link>
         </div>
         <div className={classes.item}>
-          <InsightsIcon className={classes.icon} />
-          <Typography className={classes.text}>
-            <Link to="/insights" className={classes.link}>
-              Insights
-            </Link>
-          </Typography>
+          <Link to="/insights" className={classes.link}>
+            <InsightsIcon className={classes.icon} />
+            <Typography className={classes.text}>Insights</Typography>
+          </Link>
         </div>
         <div className={classes.item}>
-          <VersionIcon className={classes.icon} />
-          <Typography className={classes.text}>
-            <Link to="/version-history" className={classes.link}>
-              Version History
-            </Link>
-          </Typography>
+          <Link to="/version-history" className={classes.link}>
+            <VersionIcon className={classes.icon} />
+            <Typography className={classes.text}>Version History</Typography>
+          </Link>
         </div>
       </div>
 
