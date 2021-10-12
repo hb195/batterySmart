@@ -90,7 +90,7 @@ const Sidebar = () => {
   return (
     <Container className={classes.root}>
       <div className={classes.titleLg}>
-        <Typography variant="h5">Grid Manager 2.0</Typography>
+        <Typography variant="h6">Grid Manager 2.0</Typography>
       </div>
       <div className={classes.titleSm}>
         <Typography variant="h5">GM 2.0</Typography>
