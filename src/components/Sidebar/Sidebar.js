@@ -83,6 +83,7 @@ const useStyles = makeStyles((theme) => ({
   link: {
     textDecoration: "none",
     color: "inherit",
+    display: "flex",
   },
 }));
 const Sidebar = () => {
