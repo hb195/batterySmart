@@ -37,11 +37,10 @@ const useStyles = makeStyles((theme) => ({
   },
   item: {
     display: "flex",
-    marginTop: theme.spacing(2),
+    marginTop: theme.spacing(1),
     marginLeft: theme.spacing(1),
   },
   text: {
-    marginLeft: theme.spacing(1),
     [theme.breakpoints.down("sm")]: {
       display: "none",
     },
