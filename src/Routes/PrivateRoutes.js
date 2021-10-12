@@ -15,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
   },
   feed: {
     color: "white",
-    width: "84vw",
+    width: "83vw",
     marginLeft: "3vw",
     backgroundColor: "lightgrey",
     borderRadius: 15,
@@ -23,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
   },
   sidebar: {
     color: "white",
-    width: "12vw",
+    width: "14vw",
   },
 }));
 
