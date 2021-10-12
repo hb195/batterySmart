@@ -15,15 +15,15 @@ const useStyles = makeStyles((theme) => ({
   },
   feed: {
     color: "white",
-    width: "83vw",
-    marginLeft: "3vw",
+    width: "84vw",
+    marginLeft: "2vw",
     backgroundColor: "lightgrey",
     borderRadius: 15,
     margin: "1vw 1vh",
   },
   sidebar: {
     color: "white",
-    width: "14vw",
+    width: "13vw",
   },
 }));
 
