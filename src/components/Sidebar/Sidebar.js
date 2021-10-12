@@ -62,20 +62,20 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   mainItems: {
-    marginTop: theme.spacing(2),
+    marginTop: theme.spacing(1),
     paddingTop: theme.spacing(1),
     paddingBottom: theme.spacing(1),
     borderRadius: 10,
   },
 
   otherItems: {
-    marginTop: theme.spacing(2),
+    marginTop: theme.spacing(1),
     paddingTop: theme.spacing(1),
     paddingBottom: theme.spacing(1),
     borderRadius: 10,
   },
   logout: {
-    marginTop: theme.spacing(3),
+    marginTop: theme.spacing(2),
     paddingTop: theme.spacing(1),
     paddingBottom: theme.spacing(1),
     borderRadius: 10,
