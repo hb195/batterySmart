@@ -38,9 +38,10 @@ const useStyles = makeStyles((theme) => ({
   item: {
     display: "flex",
     marginTop: theme.spacing(1),
-    marginLeft: theme.spacing(1),
+    marginLeft: "0.5vh",
   },
   text: {
+    marginLeft: "0.5vh",
     [theme.breakpoints.down("sm")]: {
       display: "none",
     },
