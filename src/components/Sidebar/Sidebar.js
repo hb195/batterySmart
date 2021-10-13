@@ -16,7 +16,7 @@ import DemandIcon from "@material-ui/icons/ImportExportOutlined";
 import InsightsIcon from "@material-ui/icons/PollOutlined";
 import VersionIcon from "@material-ui/icons/HistoryOutlined";
 import LogoutIcon from "@material-ui/icons/ErrorOutlineOutlined";
-import { Link, useHistory } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -46,6 +46,7 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     marginTop: "1vh",
     marginLeft: "0.5vh",
+    paddingBottom: 0,
   },
   text: {
     marginLeft: "0.5vh",
@@ -94,7 +95,6 @@ const useStyles = makeStyles((theme) => ({
 }));
 const Sidebar = ({ fetchUser }) => {
   const classes = useStyles();
-  const history = useHistory();
   const logoutHandler = () => {
     localStorage.removeItem("user");
     fetchUser();

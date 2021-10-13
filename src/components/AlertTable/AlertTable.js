@@ -14,11 +14,11 @@ const useStyles = makeStyles((theme) => ({
   container: {
     width: "100%",
     height: "44vh",
-    overflowY: "hidden",
+    overflowY: "scroll",
   },
   cell: {
     overflowX: "clip",
-    overflowY: "hidden",
+    overflowY: "clip",
     border: 0,
     color: theme.palette.grey,
     padding: "1vh 1vh",

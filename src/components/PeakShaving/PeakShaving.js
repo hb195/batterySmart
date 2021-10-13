@@ -9,6 +9,7 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
     paddingLeft: "1vw",
     paddingRight: "1vw",
+    paddingBottom: 0,
     color: "black",
   },
   title: {
