@@ -27,12 +27,12 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const PrivateRoutes = () => {
+const PrivateRoutes = ({ fetchUser }) => {
   const classes = useStyles();
   return (
     <div className={classes.root}>
       <div className={classes.sidebar}>
-        <Sidebar />
+        <Sidebar fetchUser={fetchUser} />
       </div>
       <div className={classes.feed}>
         <Switch>

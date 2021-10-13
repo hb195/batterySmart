@@ -45,12 +45,15 @@ const useStyles = makeStyles((theme) => ({
   },
   hr: {
     color: "white",
-    width: "77vw",
+    width: "82vw",
   },
   badge: {
     marginTop: "0.2vh",
-    width: "3vw",
-    height: "3vh",
+    width: "2vw",
+    height: "2vh",
+  },
+  icon: {
+    fontSize: "2vh",
   },
 }));
 
@@ -64,7 +67,7 @@ const Feed = () => {
           <div className={classes.notificationTitle}>Carlsberg Group</div>
           <div className={classes.badge}>
             <Badge badgeContent={2} color="secondary">
-              <NotificationIcon className={classes.badge} />
+              <NotificationIcon className={classes.icon} />
             </Badge>
           </div>
         </div>

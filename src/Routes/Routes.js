@@ -7,7 +7,7 @@ const Routes = () => {
     setUser(localStorage.getItem("user"));
   };
   const content = user ? (
-    <PrivateRoutes />
+    <PrivateRoutes fetchUser={fetchUser} />
   ) : (
     <PublicRoutes fetchUser={fetchUser} />
   );

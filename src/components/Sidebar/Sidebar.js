@@ -16,16 +16,18 @@ import DemandIcon from "@material-ui/icons/ImportExportOutlined";
 import InsightsIcon from "@material-ui/icons/PollOutlined";
 import VersionIcon from "@material-ui/icons/HistoryOutlined";
 import LogoutIcon from "@material-ui/icons/ErrorOutlineOutlined";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   root: {
     display: "flex",
     flexDirection: "column",
-    padding: theme.spacing(2),
+    padding: "1vh",
     paddingLeft: 0,
+    paddingBottom: 0,
   },
   titleLg: {
+    marginTop: "3vh",
     [theme.breakpoints.down("sm")]: {
       display: "none",
     },
@@ -35,9 +37,14 @@ const useStyles = makeStyles((theme) => ({
       display: "none",
     },
   },
+  dashboard: {
+    display: "flex",
+    marginTop: "0.5vh",
+    marginLeft: "0.5vh",
+  },
   item: {
     display: "flex",
-    marginTop: theme.spacing(1),
+    marginTop: "1vh",
     marginLeft: "0.5vh",
   },
   text: {
@@ -52,32 +59,31 @@ const useStyles = makeStyles((theme) => ({
   },
   profile: {
     display: "flex",
-    marginTop: theme.spacing(2),
+    marginTop: "1vh",
   },
   profileInfo: {
-    marginLeft: theme.spacing(2),
+    marginLeft: "2vh",
     fontWeight: 200,
     [theme.breakpoints.down("sm")]: {
       display: "none",
     },
   },
   mainItems: {
-    marginTop: theme.spacing(1),
-    paddingTop: theme.spacing(1),
-    paddingBottom: theme.spacing(1),
-    borderRadius: 10,
+    marginTop: "1vh",
+    paddingTop: "1vh",
+    paddingBottom: "1vh",
+    borderRadius: 20,
   },
 
   otherItems: {
-    marginTop: theme.spacing(1),
-    paddingTop: theme.spacing(1),
-    paddingBottom: theme.spacing(1),
+    marginTop: "1vh",
+    paddingTop: "1vh",
+    paddingBottom: "1vh",
     borderRadius: 10,
   },
   logout: {
-    marginTop: theme.spacing(2),
-    paddingTop: theme.spacing(1),
-    paddingBottom: theme.spacing(1),
+    marginTop: "1vh",
+    paddingTop: "1vh",
     borderRadius: 10,
   },
   link: {
@@ -86,15 +92,20 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
   },
 }));
-const Sidebar = () => {
+const Sidebar = ({ fetchUser }) => {
   const classes = useStyles();
+  const history = useHistory();
+  const logoutHandler = () => {
+    localStorage.removeItem("user");
+    fetchUser();
+  };
   return (
     <Container className={classes.root}>
       <div className={classes.titleLg}>
         <Typography variant="h6">Grid Manager 2.0</Typography>
       </div>
       <div className={classes.titleSm}>
-        <Typography variant="h5">GM 2.0</Typography>
+        <Typography variant="subtitle1">GM2</Typography>
       </div>
       <hr className={classes.hr} />
       <div className={classes.profile}>
@@ -110,7 +121,7 @@ const Sidebar = () => {
       </div>
       <br />
       <br />
-      <div className={classes.item}>
+      <div className={classes.dashboard}>
         <Link to="/dashboard" className={classes.link}>
           <DashboardIcon className={classes.icon} />
           <Typography className={classes.text}>Dashboard</Typography>
@@ -192,7 +203,7 @@ const Sidebar = () => {
       </div>
 
       <div className={classes.logout}>
-        <div className={classes.item}>
+        <div className={classes.item} onClick={logoutHandler}>
           <LogoutIcon className={classes.icon} />
           <Typography className={classes.text}>Logout</Typography>
         </div>
